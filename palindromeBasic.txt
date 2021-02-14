@@ -1,0 +1,15 @@
+class Solution {
+public:
+    bool isPalindrome(int x) {
+        
+        std::string num = std::to_string(x);
+        int sizeN = num.size();
+        
+        if(num[0] == num[sizeN-1])
+         {
+           return true;  
+         }
+        
+      return false;
+    }
+};
