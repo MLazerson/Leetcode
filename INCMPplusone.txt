@@ -1,0 +1,23 @@
+class Solution {
+public:
+    vector<int> plusOne(vector<int>& digits) {
+        
+         int end = digits.size();
+         
+            if (digits[end-1] == 9) {
+                digits[end-1] = 0;
+                
+                for(int i = end-2; i >= 0; i--) {
+                    
+                    if(digits[i] == 9) {digits[i] = 0;}
+                    else {digits[i]++;}
+                 
+                }
+            }
+            else {
+                digits[end-1]++;
+            }        
+        
+    return digits;
+    }
+};
