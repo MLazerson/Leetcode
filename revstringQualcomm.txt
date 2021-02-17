@@ -1,0 +1,17 @@
+
+vector<string> reverseString(vector<char>& s) {
+        
+	 int end = s.size()-1;	
+	 vector<char> newStr;
+	 
+	//run through original backwards
+       for(int i=end; i >= 0; i--) {
+	   //start at beginning of new empty vector
+	     for(int j=0; ;j++) {
+		 //fill new vector/array
+		    newstr[j] = s[i];
+		 }
+	   } 
+	   
+	   return newStr; 
+};
