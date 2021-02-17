@@ -1,0 +1,19 @@
+class Solution {
+public:
+    char findTheDifference(string s, string t) {
+                
+        int tSZ = s.size() + t.size();
+        
+        for(int i=0; i < tSZ ; i++) {
+            
+            if(s[i] != t[i]) {
+                
+                return t[i];
+            }
+            
+        }
+        
+        return -1;
+        
+    }
+};
